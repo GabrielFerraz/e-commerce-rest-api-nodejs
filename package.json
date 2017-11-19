@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-rest-api-nodejs",
+  "version": "1.0.0",
+  "description": "REST API for a simple e-commerce made using NodeJS and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no text specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "NodeJs",
+    "MongoDB"
+  ],
+  "author": "Gabriel Ferraz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs#readme"
+}
