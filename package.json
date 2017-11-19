@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs/issues"
   },
-  "homepage": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs#readme"
+  "homepage": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
