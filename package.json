@@ -24,5 +24,8 @@
   "homepage": "https://github.com/GabrielFerraz/e-commerce-rest-api-nodejs#readme",
   "devDependencies": {
     "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
