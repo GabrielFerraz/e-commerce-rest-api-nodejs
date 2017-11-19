@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
     Product = mongoose.model('Products');
 
-export.list_all_products = function(req, res) {
+exports.list_all_products = function(req, res) {
   Product.find({}, function(err, product) {
     if (err)
       res.send(err);
@@ -9,7 +9,7 @@ export.list_all_products = function(req, res) {
   });
 };
 
-export.create_a_product = function(req, res) {
+exports.create_a_product = function(req, res) {
   var new_product = new Product(req.body);
   new_product.save(function(err, product) {
     if (err)
@@ -18,7 +18,7 @@ export.create_a_product = function(req, res) {
   });
 };
 
-export.read_a_product = function(req, res) {
+exports.read_a_product = function(req, res) {
   Product.findById(req.params.productId, function(err, task) {
     if (err)
       res.send(err);
@@ -26,7 +26,7 @@ export.read_a_product = function(req, res) {
   });
 };
 
-export.update_a_product = function(req, res) {
+exports.update_a_product = function(req, res) {
   Product.findOneAndUpdate({_id: req.params.productId}, req.body, {new: true}, function(err, product) {
     if (err)
       res.send(err);
@@ -34,7 +34,7 @@ export.update_a_product = function(req, res) {
   });
 };
 
-export.delete_a_product = function(req, res) {
+exports.delete_a_product = function(req, res) {
   Product.remove({
     _id: req.params.productId
   }, function(err, product) {
